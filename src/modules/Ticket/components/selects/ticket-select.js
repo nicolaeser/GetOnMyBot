@@ -85,7 +85,7 @@ module.exports = {
         const state4embed = new EmbedBuilder()
           .setTitle("<a:dndgif:1006927962668544020> Ticket Schließung geplant")
           .setDescription(
-            `<#${interaction.channel}> wurde von ${interaction.user} als auf **Schließung geplant** markiert.\nDas passiert meistens, wenn keine Antwort mehr nach Inaktiv-Status kommt oder sich dein Anliegen erledigt hat.`,
+            `${interaction.channel} wurde von ${interaction.user} als auf **Schließung geplant** markiert.\nDas passiert meistens, wenn keine Antwort mehr nach Inaktiv-Status kommt oder sich dein Anliegen erledigt hat.`,
           )
           .setThumbnail(
             interaction.guild.iconURL({ forceStatic: false, size: 4096 }),
