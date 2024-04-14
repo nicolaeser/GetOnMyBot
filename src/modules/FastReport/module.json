@@ -1,0 +1,11 @@
+{
+    "name": "Fast Report",
+    "version": "1.0.0",
+    "author": "Nico Laeser",
+    "state": {
+        "load": true,
+        "event": false,
+        "commands": false,
+        "components": true
+    }
+}

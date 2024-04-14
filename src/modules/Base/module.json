@@ -1,0 +1,11 @@
+{
+    "name": "Base",
+    "version": "1.0.0",
+    "author": "Nico Laeser",
+    "state": {
+        "load": true,
+        "event": true,
+        "commands": false,
+        "components": false
+    }
+}

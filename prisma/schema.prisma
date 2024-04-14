@@ -1,0 +1,35 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model Token {
+  id                String  @id @default(auto()) @map("_id") @db.ObjectId
+  token_name        String  @unique
+  token_value       String?
+  token_description String?
+
+  @@map("Token")
+}
+
+model LiveStreamStates {
+  id              String  @id @default(auto()) @map("_id") @db.ObjectId
+  streamer_name   String  @unique
+  stream_provider String  @default("Twitch")
+  stream_live     Boolean @default(false)
+
+  @@map("LiveStreamStats")
+}
+
+model Tickets {
+  id        String  @id @default(auto()) @map("_id") @db.ObjectId
+  ownerId   String
+  channelId String  @unique
+  open      Boolean @default(true)
+
+  @@map("Tickets")
+}

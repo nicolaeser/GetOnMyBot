@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  bot:
+    image: ipexa/streamer-bots:getonmybot
+    restart: always
+    environment:
+      DISCORD_BOT_TOKEN: TOKEN
+      DISCORD_BOT_ID: ID
+      DISCORD_BOT_STATUS: dnd
+      DISCORD_BOT_ACTIVITY_TEXT: @ipexa
+      OWNER_ID: ID
+      GUILD_ID: null
+      DEPLOY: activated
+      SLASHCOMMANDS: true
+      PREFIXCOMMANDS: true
+      USERCONTEXTCOMMANDS: true
+      MESSAGECONTEXTCOMMANDS: true
+      DATABASE_URL: URL
+      TICKET_PARENT_ID: ID
+      TICKET_BOT_ROLE: ID
+      TICKET_DEVELOPER_ROLE: ID
+      TICKET_CONTROL_ROLE: ID
+      ADDITIONAL_ADD_ROLE: ID
