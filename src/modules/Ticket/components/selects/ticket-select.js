@@ -18,7 +18,7 @@ module.exports = {
 
     if (!hasControlRole)
       return interaction.followUp({
-        content: `Dir fehlt leider die <@&${process.env.TICKET_CONTROL_ROLE}> Rolle um das zu machen!`,
+        content: `${interaction.user}, Dir fehlt leider die <@&${process.env.TICKET_CONTROL_ROLE}> Rolle um das zu machen!`,
         ephemeral: true,
       });
 
