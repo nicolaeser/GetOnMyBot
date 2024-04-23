@@ -12,10 +12,10 @@ services:
       OWNER_ID: ID
       GUILD_ID: null
       DEPLOY: activated
-      SLASHCOMMANDS: true
-      PREFIXCOMMANDS: true
-      USERCONTEXTCOMMANDS: true
-      MESSAGECONTEXTCOMMANDS: true
+      SLASHCOMMANDS: activated
+      PREFIXCOMMANDS: activated
+      USERCONTEXTCOMMANDS: activated
+      MESSAGECONTEXTCOMMANDS: activated
       DATABASE_URL: URL
       TICKET_PARENT_ID: ID
       TICKET_BOT_ROLE: ID
