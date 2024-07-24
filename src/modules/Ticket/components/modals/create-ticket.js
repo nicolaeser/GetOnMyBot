@@ -95,7 +95,7 @@ module.exports = {
       });
 
       const message = await ticket.send({
-        content: `<@&${process.env.TICKET_CONTROL_ROLE}>`,
+        content: `${interaction.user} <@&${process.env.TICKET_CONTROL_ROLE}>`,
         embeds: [embed1, embed2],
         components: [
           new ActionRowBuilder().addComponents(
