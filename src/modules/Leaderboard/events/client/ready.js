@@ -9,7 +9,7 @@ module.exports = {
    * @returns
    */
   run: async (client) => {
-    cron.schedule('15 21 * * *', async () => {
+    cron.schedule('0 22 * * *', async () => {
       try {
         const topUsers = await client.db.MessageCount.findMany({
           orderBy: {
@@ -43,7 +43,7 @@ module.exports = {
         filteredEntries.forEach((entry, index) => {
           leaderboardEmbed.addFields({
             name: `#${index + 1} @${entry.username}`,
-            value: `Messages: ${entry.count}`,
+            value: `Nachrichten: ${entry.count}`,
             inline: false,
           });
         });
