@@ -9,7 +9,7 @@ module.exports = {
    * @returns
    */
   run: async (client) => {
-    cron.schedule('10 21 * * *', async () => {
+    cron.schedule('15 21 * * *', async () => {
       try {
         const topUsers = await client.db.MessageCount.findMany({
           orderBy: {
