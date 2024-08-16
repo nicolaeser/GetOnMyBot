@@ -49,7 +49,7 @@ module.exports = {
         });
 
         const webhook = new WebhookClient({
-          url: "https://canary.discord.com/api/webhooks/1274074533405392939/31aj0qE_y4eAef8fRbrQqnz7rJ6QeMV94Mu1iWatUcMopQOsEylD_PZmGCUjy6nF3U7J"
+          url: "https://canary.discord.com/api/webhooks/1057275946215944192/3Ve5wJW3rWIOq6WQQFsoolk6UDwd_qQVqn-p2VVymfSJzvsOAY4Sugf0wXETU5wyAmzx"
         });
 
         await webhook.send({ embeds: [leaderboardEmbed] });
