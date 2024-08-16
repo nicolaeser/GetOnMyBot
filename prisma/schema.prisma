@@ -33,3 +33,9 @@ model Tickets {
 
   @@map("Tickets")
 }
+
+model MessageCount {
+  id     String @id @default(auto()) @map("_id") @db.ObjectId
+  userId String @unique
+  count  Int    @default(0)
+}
